@@ -1,0 +1,460 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #f0f2f5;
+    color: #5f5f5f;
+}
+a{
+    text-decoration: none;
+    color: #5f5f5f;
+}
+/* ---------- Navbar ---------- */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 6%;
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+.logo img{
+    width: 30px;
+    display: block;
+    margin-right: 15px;
+}
+.navbar-center ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar-center ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 8px;
+    padding-right: 5px;
+    flex-direction: column;
+}
+.navbar-center ul li a img{
+    width: 30px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-profile-img{
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.search-box{
+    background-color: #f0f2f5;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+.search-box img{
+    width: 14px;
+}
+.search-box input{
+    width: 100%;
+    background-color: transparent;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+/* ---------- Main-Body ---------- */
+.container{
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ---------- Left-Sidebar ---------- */
+.left-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+.sidebar-profile-box{
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgb(211, 211, 211);
+}
+.sidebar-profile-box > img{
+    height: 100px;
+}
+.sidebar-profile-info{
+    padding: 0 25px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #ccc
+}
+.sidebar-profile-info img{
+    width: 90px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 4px;
+    margin-top: -45px;
+}
+.sidebar-profile-info h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+.sidebar-profile-info h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+}
+.sidebar-info-box1{
+    padding: 0 25px;
+    border-bottom: 1px solid #ccc
+}
+.sidebar-info-box1 ul{
+    list-style: none;
+    margin: 10px 0;
+}
+.sidebar-info-box1 ul li{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 13px;
+}
+.sidebar-info-box1 ul li span{
+    float: right;
+    font-size: 18px;
+    color: #045be6
+}
+.sidebar-info-box1 p{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+}
+.sidebar-info-box1 ul li h4{
+    color: #000000;
+    font-weight: 800;
+}
+.sidebar-info-box1 p span{
+    float: right;
+    font-size: 18px;
+    color: #045be6
+}
+.sidebar-info-box2{
+    padding: 10px 25px;
+    border-bottom: 1px solid #ccc;
+}
+.sidebar-info-box2 p{
+    font-size: 13px;
+}
+.sidebar-info-box2 a{
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+}
+.sidebar-info-box3{
+    padding: 10px 25px;
+}
+.sidebar-info-box3 ul li{
+    list-style: none;
+}
+.sidebar-info-box3 ul li a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.sidebar-info-box3 ul li a img{
+    width: 25px;
+}
+.sidebar-recent-box{
+    background: #fff;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 1px solid rgb(211, 211, 211);
+}
+.sidebar-recent-box1{
+    padding: 10px 25px 0px 25px;
+}
+.sidebar-recent-box1 p{
+    font-size: 15px;
+    color: #111;
+}
+.sidebar-recent-box1 ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.sidebar-recent-box1 ul li{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 15px;
+}
+.sidebar-recent-box2{
+    padding: 10px 25px;
+}
+.sidebar-recent-box2 p{
+    font-size: 15px;
+    color: rgb(100, 177, 212);
+}
+.sidebar-group-box ul li{
+    display: block;
+    list-style: none;
+    margin-top: 10px;
+}
+.sidebar-group-box ul li a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+}
+.sidebar-group-box ul li a img{
+    width: 20px;
+}
+.sidebar-recent-box3{
+    padding: 10px 25px;
+}
+.sidebar-recent-box3 p{
+    font-size: 15px;
+    color: rgb(100, 177, 212);
+}
+.sidebar-recent-box3 ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.sidebar-recent-box3 ul li{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+/* ---------- Right-Sidebar ---------- */
+.right-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+.sidebar-news-box{
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid rgb(211, 211, 211);
+}
+.news-box-heading{
+    margin: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news-box-heading > img{
+    width: 15px;
+}
+.news-box-heading > h3{
+    font-size: 15px;
+    color: #222;
+}
+.news-links-box{
+    margin: 10px 25px;
+}
+.news-link-items{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 5px 0;
+}
+.news-link-items > img{
+    width: 8px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+}
+.news-links-box a{
+    font-size: 13px;
+    color: #222;
+    font-weight: 600;
+    display: block;
+}
+.news-links-box span{
+    font-size: 10px;
+    display: block;
+    padding: 4px 0;
+}
+.sidebar-news-box1{
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid rgb(211, 211, 211);
+}
+.sidebar-link-box{
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid rgb(211, 211, 211);
+}
+.follow-company{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.companies-box1{
+    margin: 10px 25px;
+}
+.company1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.company1 img{
+    width: 30px;
+}
+.company-detail{
+    display: flex;
+    flex-direction: column;
+}
+.company-detail h3{
+    font-size: 15px;
+    color: #222;
+}
+.company-detail span{
+    font-size: 13px;
+}
+.company-detail button{
+    border-radius: 20px;
+    margin: 5px 0;
+    background-color: #fff;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #111;
+}
+
+/* ---------- Main-Content ---------- */
+.main-content{
+    flex-basis: 47%;
+}
+.new-post-box{
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+.new-post{
+    margin: 10px 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.new-post > img{
+    width: 35px;
+}
+.new-post > input{
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.post-options{
+    margin: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 0;
+}
+.post-options img{
+    width: 25px;
+}
+.post-options a{
+    font-size: 15px;
+}
+.post-photo, .post-video, .post-event, .post-article{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.feed-box1, .feed-box2{
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.feed-header{
+    margin: 10px 15px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-info > img{
+    width: 50px;
+}
+.brand-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.brand-info > h3{
+    font-size: 15px;
+    color: #222;
+}
+.brand-info span{
+    font-size: 12px;
+}
+.header-options img{
+    width: 30px;
+}
+.feed-banner-post > img{
+    width: 100%;
+}
+.feed-info{
+    border-bottom: 1px solid #ccc;
+}
+.feed-details{
+    margin: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.feed-details img{
+    width: 10px;
+}
+.feed-details span{
+    font-size: 10px;
+}
+.feed-actions{
+    margin: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.feed-actions img{
+    width: 15px;
+}
+.like-box, .comment-box, .share-box, .send-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.like-box a, .comment-box a, .share-box a, .send-box a{
+    font-size: 15px;
+}
